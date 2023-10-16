@@ -11,7 +11,7 @@ import { I18N } from './i18n';
  */
 export const DEFAULTS: Options = {
   type              : 'slide',
-  role              : 'region',
+  role              : 'banner',
   speed             : 400,
   perPage           : 1,
   cloneStatus       : true,

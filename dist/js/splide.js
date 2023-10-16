@@ -2869,7 +2869,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   };
   var DEFAULTS = {
     type: "slide",
-    role: "region",
+    role: "banner",
     speed: 400,
     perPage: 1,
     cloneStatus: true,

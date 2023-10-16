@@ -5,7 +5,7 @@ import { buildHtml, init } from '../../../test';
 describe( 'Elements', () => {
   test( 'can assign aria attributes.', () => {
     const splide = init();
-    expect( splide.root.getAttribute( 'role' ) ).toBe( 'region' );
+    expect( splide.root.getAttribute( 'role' ) ).toBe( 'banner' );
     expect( splide.root.getAttribute( 'aria-roledescription' ) ).toBe( 'carousel' );
   } );
 
@@ -50,9 +50,9 @@ describe( 'Elements', () => {
 
   test( 'should not remove the role attribute by soft destruction.', () => {
     const splide = init();
-    expect( splide.root.getAttribute( 'role' ) ).toBe( 'region' );
+    expect( splide.root.getAttribute( 'role' ) ).toBe( 'banner' );
 
     splide.destroy( false );
-    expect( splide.root.getAttribute( 'role' ) ).toBe( 'region' );
+    expect( splide.root.getAttribute( 'role' ) ).toBe( 'banner' );
   } );
 } );
