@@ -2876,7 +2876,7 @@ var I18N = {
 };
 var DEFAULTS = {
   type: "slide",
-  role: "banner",
+  role: "region",
   speed: 400,
   perPage: 1,
   cloneStatus: true,
