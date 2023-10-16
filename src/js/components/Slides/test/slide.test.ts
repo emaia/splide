@@ -260,7 +260,7 @@ describe( 'Slide', () => {
     const splide = init( { pagination: true } );
 
     splide.Components.Slides.forEach( ( { slide } ) => {
-      expect( slide.getAttribute( 'role' ) ).toBe( 'tabpanel' );
+      expect( slide.getAttribute( 'role' ) ).toBe( 'banner' );
     } );
   } );
 
@@ -268,7 +268,7 @@ describe( 'Slide', () => {
     const splide = init( { pagination: false } );
 
     splide.Components.Slides.forEach( ( { slide } ) => {
-      expect( slide.getAttribute( 'role' ) ).toBe( 'group' );
+      expect( slide.getAttribute( 'role' ) ).toBe( 'banner' );
       expect( slide.getAttribute( 'aria-roledescription' ) ).toBe( splide.options.i18n.slide );
     } );
   } );

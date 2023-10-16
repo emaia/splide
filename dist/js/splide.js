@@ -6,7 +6,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Splide.js
  * Version  : 4.1.4
  * License  : MIT
- * Copyright: 2022 Naotoshi Fujita
+ * Copyright: 2023 Naotoshi Fujita
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Splide = factory());
@@ -883,7 +883,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     function mount() {
       if (!isClone) {
         slide.id = root.id + "-slide" + pad(index + 1);
-        setAttribute(slide, ROLE, pagination ? "tabpanel" : "group");
+        setAttribute(slide, ROLE, "banner");
         setAttribute(slide, ARIA_ROLEDESCRIPTION, i18n.slide);
         setAttribute(slide, ARIA_LABEL, label || format(i18n.slideLabel, [index + 1, Splide2.length]));
       }
